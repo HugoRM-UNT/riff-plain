@@ -1,15 +1,12 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
 .nav-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-
-
-@media (max-width: 991.98px) {
-    .nav-center {
-        position: static;
-        transform: none;
-    }
 }
 
 .btn-neon {
@@ -22,4 +19,40 @@
 .btn-neon:hover {
     background-color: #4ade80;
     color: black;
+}
+
+.hero-cta {
+    min-width: 230px;
+}
+
+@media (max-width: 991.98px) {
+    .nav-center {
+        position: static;
+        transform: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-content {
+        width: calc(100% - 2rem);
+    }
+
+    .hero-content h1 {
+        font-size: 1.65rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-cta {
+        width: auto;
+        min-width: 0;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1.25rem !important;
+        font-size: 0.95rem;
+        max-width: 280px;
+    }
 }
